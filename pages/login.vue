@@ -1,8 +1,8 @@
 <template>
   <div>
     {{ $t("login") }}
-
     {{ $t("forget-password") }}
+    <Button label="helloworld" />
   </div>
 </template>
 

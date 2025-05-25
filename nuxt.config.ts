@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   // module register
   modules: [
     "@nuxt/eslint",
+    "@primevue/nuxt-module",
     "@nuxt/fonts",
     "@nuxt/icon",
     "@pinia/nuxt",
@@ -39,5 +40,13 @@ export default defineNuxtConfig({
         file: "th.json",
       },
     ],
+  },
+  primevue: {
+    importTheme: {
+      from: "@/assets/primevue/preset.ts",
+    },
+    options: {
+      ripple: true,
+    },
   },
 })
