@@ -2,12 +2,13 @@
   <div>
     {{ $t("login") }}
     {{ $t("forget-password") }}
-    <Button label="toggle dark/light" @click="toggle" />
+    <Button label="toggle dark/light" @click="darkModeStore.toggle" />
+    {{ darkModeStore.$state.isDark ? "Dark Mode" : "Light Mode" }}
   </div>
 </template>
 
 <script lang="ts" setup>
-const { toggle } = useDarkMode()
+const darkModeStore = useDarkModeStore()
 </script>
 
 <style></style>
