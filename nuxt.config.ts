@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@pinia/nuxt",
     "@nuxtjs/tailwindcss",
+    "@nuxtjs/i18n",
   ],
   // app configuration
   ssr: false,
@@ -22,5 +23,21 @@ export default defineNuxtConfig({
   fonts: {},
   icon: {
     serverBundle: "local",
+  },
+  i18n: {
+    defaultLocale: "en",
+    strategy: "no_prefix",
+    locales: [
+      {
+        code: "en",
+        name: "English",
+        file: "en.json",
+      },
+      {
+        code: "th",
+        name: "Thai",
+        file: "th.json",
+      },
+    ],
   },
 })
