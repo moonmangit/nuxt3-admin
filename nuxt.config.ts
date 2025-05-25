@@ -19,6 +19,15 @@ export default defineNuxtConfig({
       apiBaseUrl: "<default>",
     },
   },
+  components: {
+    dirs: [
+      {
+        path: "./components/utils",
+        pathPrefix: true,
+        global: true,
+      },
+    ],
+  },
   // modules configuration
   fonts: {},
   icon: {
