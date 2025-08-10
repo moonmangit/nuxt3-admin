@@ -35,6 +35,9 @@ importers:
       nuxt:
         specifier: ^3.17.4
         version: 3.17.4(@parcel/watcher@2.5.1)(@types/node@22.15.21)(db0@0.3.2)(eslint@9.27.0(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.41.1)(terser@5.39.2)(typescript@5.8.3)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(terser@5.39.2)(yaml@2.8.0))(yaml@2.8.0)
+      primeicons:
+        specifier: ^7.0.0
+        version: 7.0.0
       primevue:
         specifier: ^4.3.4
         version: 4.3.4(vue@3.5.14(typescript@5.8.3))
@@ -3856,6 +3859,9 @@ packages:
   pretty-bytes@6.1.1:
     resolution: {integrity: sha512-mQUvGU6aUFQ+rNvTIAcZuWGRT9a6f6Yrg9bHs4ImKF+HZCEK+plBvnAZYSIQztknZF2qnzNtr6F8s0+IuptdlQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
+
+  primeicons@7.0.0:
+    resolution: {integrity: sha512-jK3Et9UzwzTsd6tzl2RmwrVY/b8raJ3QZLzoDACj+oTJ0oX7L9Hy+XnVwgo4QVKlKpnP/Ur13SXV/pVh4LzaDw==}
 
   primevue@4.3.4:
     resolution: {integrity: sha512-zYQFBXI7BIEglc99MzNmQ/huZnzUYzF2JXQT3OFFUIUfz6aHW5hCdjyYPoThDICjKYAladqvvLkW7XQT+Kf08Q==}
@@ -9254,6 +9260,8 @@ snapshots:
   prettier@3.5.3: {}
 
   pretty-bytes@6.1.1: {}
+
+  primeicons@7.0.0: {}
 
   primevue@4.3.4(vue@3.5.14(typescript@5.8.3)):
     dependencies:
