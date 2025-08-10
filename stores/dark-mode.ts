@@ -10,13 +10,7 @@ export const useDarkModeStore = defineStore("dark-mode", () => {
     localStorage.getItem(LOCAL_STORAGE_KEY) === LOCAL_STORAGE_DARK_VALUE,
   )
 
-  function sync() {
-    if (isDark.value) {
-      toDark()
-    } else {
-      toLight()
-    }
-  }
+  // set value
   function toDark() {
     isDark.value = true
     document.documentElement.classList.toggle(DARK_CLASS, true)
@@ -27,12 +21,13 @@ export const useDarkModeStore = defineStore("dark-mode", () => {
     document.documentElement.classList.toggle(DARK_CLASS, false)
     localStorage.setItem(LOCAL_STORAGE_KEY, LOCAL_STORAGE_LIGHT_VALUE)
   }
+
+  // macro functions
+  function sync() {
+    return isDark.value ? toDark() : toLight()
+  }
   function toggle() {
-    if (isDark.value) {
-      toLight()
-    } else {
-      toDark()
-    }
+    return isDark.value ? toLight() : toDark()
   }
 
   return {

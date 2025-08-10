@@ -6,5 +6,6 @@ export default <Partial<Config>>{
   theme: {
     extend: {},
   },
+  darkMode: "class",
   plugins: [PrimeUI],
 }
