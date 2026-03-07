@@ -2,5 +2,14 @@
   "welcome": "ยินดีต้อนรับ",
   "login": "เข้าสู่ระบบ",
   "test": "ทดสอบ",
-  "forget-password": "ลืมรหัสผ่าน"
+  "forget-password": "ลืมรหัสผ่าน",
+  "email": "อีเมล",
+  "password": "รหัสผ่าน",
+  "remember-me": "จำฉันไว้",
+  "sign-in": "เข้าสู่ระบบ",
+  "dashboard": "แดชบอร์ด",
+  "total-users": "จำนวนผู้ใช้ทั้งหมด",
+  "active-sessions": "เซสชันที่ใช้งานอยู่",
+  "revenue": "รายได้",
+  "recent-activity": "กิจกรรมล่าสุด"
 }

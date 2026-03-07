@@ -2,5 +2,14 @@
   "welcome": "Welcome",
   "login": "Login",
   "test": "Test",
-  "forget-password": "forget password"
+  "forget-password": "Forget Password",
+  "email": "Email",
+  "password": "Password",
+  "remember-me": "Remember Me",
+  "sign-in": "Sign In",
+  "dashboard": "Dashboard",
+  "total-users": "Total Users",
+  "active-sessions": "Active Sessions",
+  "revenue": "Revenue",
+  "recent-activity": "Recent Activity"
 }
