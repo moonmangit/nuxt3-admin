@@ -33,6 +33,8 @@ export default defineNuxtConfig({
   fonts: {},
   icon: {
     serverBundle: "local",
+    // Override duplicate middleware
+    override: true,
   },
   i18n: {
     defaultLocale: "en",
@@ -56,6 +58,19 @@ export default defineNuxtConfig({
     },
     options: {
       ripple: true,
+    },
+  },
+  nitro: {
+    experimental: {
+      wasm: true,
+    },
+    // Override duplicate middleware
+    routeRules: {
+      "/**": {
+        headers: {
+          "X-Override": "manifest-route-rule",
+        },
+      },
     },
   },
 })
